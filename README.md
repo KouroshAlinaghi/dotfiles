@@ -2,11 +2,17 @@
 
 ## Usage
 
-running ` run.sh ` file will:
-1. Backup of your old config files (if exists)
-2. Replace your old files with repository's files.
+### Installing dotfiles to their respective locations:
 
-running ` restore.sh ` file will:
-1. Restore you old config files (backups).
+```
+bash ./install.sh
+```
+
+**Note**: This script also creates a backup file of your old file, in `FILENAME.old`
+
+### Restoring previous dotfiles
+```
+bash ./uninstall.sh
+```
 
 **Important:** You should have backup files to run this script. 

@@ -1,0 +1,23 @@
+status --is-interactive; 
+starship init fish | source
+set fish_greeting ""
+export PATH="$HOME/.cargo/bin:$PATH"
+
+fzf_configure_bindings --directory=\cf --variables=\cv --history=\ch
+export FZF_DEFAULT_OPTS=" \
+--color=bg+:#414559,bg:#303446,spinner:#f2d5cf,hl:#e78284 \
+--color=fg:#c6d0f5,header:#e78284,info:#ca9ee6,pointer:#f2d5cf \
+--color=marker:#f2d5cf,fg+:#c6d0f5,prompt:#ca9ee6,hl+:#e78284 \
+--height 70% --border" 
+
+export BAT_THEME="Catppuccin-frappe"
+
+alias ls='exa --grid --long --no-permissions --git --group-directories-first --icons --group --no-user'
+alias bat=batcat
+alias fd=fdfind
+
+#set fish_color_command 'C7C7FF'
+#set fish_color_quote '559848'
+#set fish_color_error 'FF2C2C'
+#set fish_color_comment '808080'
+#set fish_color_autosuggestion '7A6876'

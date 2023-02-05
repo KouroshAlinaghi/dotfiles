@@ -4,14 +4,14 @@
 # Any items in the `env` entry below will be added as
 # environment variables. Some entries may override variables
 # set by alacritty itself.
-#env:
+env:
   # TERM variable
   #
   # This value is used to set the `$TERM` environment variable for
   # each instance of Alacritty. If it is not present, alacritty will
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
-  #TERM: xterm-256color
+  TERM: xterm-256color
 
 window:
   # Window dimensions (changes require restart)
@@ -35,11 +35,11 @@ window:
   # Blank space added around the window in pixels. This padding is scaled
   # by DPI and the specified value is always added at both opposing sides.
   padding:
-    x: 7
-    y: 7
+    x: 6
+    y: 6
 
   # Spread additional padding evenly around the terminal content.
-  dynamic_padding: false
+  dynamic_padding: true
 
   # Window decorations
   #
@@ -112,7 +112,7 @@ font:
     family: SF Mono
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: SemiBold
 
   # Bold font face
   bold:
@@ -137,7 +137,7 @@ font:
     style: Italic
 
   # Point size
-  size: 13
+  size: 16
 
   # Offset is the extra space around each character. `offset.y` can be thought of
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
@@ -166,7 +166,7 @@ font:
   #
   # This is a global setting and will require a log out or restart to take
   # effect.
-  use_thin_strokes: true
+  AppleFontSmoothing: true
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
@@ -225,33 +225,33 @@ draw_bold_text_with_bright_colors: true
     #    cyan:    '0x49FFDB'
     #  white:   '0xffffff'
 # Colors (Snazzy)
-colors:
+#colors:
   # Default colors
-  primary:
-    background: '0x13141a'
-    foreground: '0xCBCCC6'
+  #  primary:
+  #    background: '0x13141a'
+  #    foreground: '0xCBCCC6'
 
   # Normal colors
-  normal:
-    black:   '0x0A0E14'
-    red:     '0xF29E74'
-    green:   '0x73D0FF'
-    yellow:  '0xffcc66'
-    blue:    '0x5ccfe6'
-    magenta: '0xff6ac1'
-    cyan:    '0xDAF675'
-    white:   '0xf1f1f0'
-
+  #  normal:
+  #    black:   '0x0A0E14'
+  #   red:     '0xF29E74'
+  #   green:   '0x73D0FF'
+  #   yellow:  '0xffcc66'
+  #   blue:    '0x5ccfe6'
+  #   magenta: '0xff6ac1'
+  #   cyan:    '0xDAF675'
+  #   white:   '0xf1f1f0'
+  #
   # Bright colors
-  bright:
-    black:   '0x686868'
-    red:     '0xff5c57'
-    green:   '0x5af78e'
-    yellow:  '0xf3f99d'
-    blue:    '0x57c7ff'
-    magenta: '0xff6ac1'
-    cyan:    '0x9aedfe'
-    white:   '0xf1f1f0'
+  # bright:
+  #   black:   '0x686868'
+  #   red:     '0xff5c57'
+  #   green:   '0x5af78e'
+  #   yellow:  '0xf3f99d'
+  #   blue:    '0x57c7ff'
+  #   magenta: '0xff6ac1'
+  #   cyan:    '0x9aedfe'
+  #   white:   '0xf1f1f0'
   # Dim colors
   #
   # If the dim colors are not set, they will be calculated automatically based
@@ -274,7 +274,7 @@ colors:
   # Example:
   #   `- { index: 16, color: '0xff00ff' }`
   #
-  indexed_colors: []
+  #  indexed_colors: []
 
 # Visual Bell
 #
@@ -306,7 +306,7 @@ visual_bell:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 1.0
+window.opacity: 1.0
 
 # Mouse bindings
 #
@@ -338,7 +338,7 @@ mouse:
   # If this is `true`, the cursor is temporarily hidden when typing.
   hide_when_typing: true
 
-  url:
+  hints:
     # URL launcher
     #
     # This program is executed when clicking on a text which is recognized as a URL.
@@ -395,7 +395,7 @@ live_config_reload: true
 #   - (Linux) user login shell
 #   - (Windows) powershell
 shell:
-  program: /usr/bin/zsh
+  program: /home/kourosh/.nix-profile/bin/fish
   args:
     - --login
 
@@ -675,3 +675,12 @@ key_bindings:
   - { key: Down, mods: Control|Shift,   action: ScrollPageDown }
   - { key: End,      mods: Control,   action: ScrollToBottom }
   - { key: Home,     mods: Control,   action: ScrollToTop    }
+
+
+import:
+  # uncomment the flavour you want below:
+#  - ~/.config/alacritty/catppuccin/catppuccin-mocha.yml
+#  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+  - ~/.config/alacritty/catppuccin/catppuccin-frappe.yml
+#  - ~/.config/alacritty/catppuccin/catppuccin-latte.yml
+
