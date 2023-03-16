@@ -28,24 +28,26 @@ inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
+inoremap < <><left>
 
 " vim-plug
 call plug#begin()
 
-  Plug 'connorholyday/vim-snazzy'
-  Plug 'mhartington/oceanic-next'
-  Plug 'tpope/vim-endwise'
-  Plug 'vim-airline/vim-airline'
-  Plug 'pncborgar/vim-parkour-theme'
-  Plug 'scrooloose/nerdtree'
-  Plug 'vim-airline/vim-airline-themes'
-  Plug 'arcticicestudio/nord-vim'
-  Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'junegunn/fzf'
-  Plug 'junegunn/fzf.vim'
-  Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
-  Plug 'voldikss/vim-floaterm'
-  Plug 'ptzz/lf.vim'
+    Plug 'connorholyday/vim-snazzy'
+    Plug 'mhartington/oceanic-next'
+    Plug 'tpope/vim-endwise'
+    Plug 'vim-airline/vim-airline'
+    Plug 'pncborgar/vim-parkour-theme'
+    Plug 'scrooloose/nerdtree'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'arcticicestudio/nord-vim'
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'junegunn/fzf'
+    Plug 'junegunn/fzf.vim'
+    Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+    Plug 'voldikss/vim-floaterm'
+    Plug 'ptzz/lf.vim'
+    Plug 'numToStr/Comment.nvim'
 
 call plug#end()
 
@@ -93,3 +95,5 @@ let g:clipboard = {
             \    },
             \    'cache_enabled': 0,
             \}
+
+lua require('Comment').setup()
