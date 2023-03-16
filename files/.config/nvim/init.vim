@@ -81,19 +81,4 @@ nmap <C-P> :Files<CR>
 " enter for confirming coc.nvim suggestion
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "<C-g>u<CR><c-r>=coc#on_enter()<CR>"
 
-" make nvim use xsel as clipboard manager
-set clipboard^=unnamed,unnamedplus
-let g:clipboard = {
-            \    'name': 'xsel - bin',
-            \    'copy': {
-            \        '+': '/usr/bin/xsel -i -b',
-            \        '*': '/usr/bin/xsel -i -p',
-            \    },
-            \    'paste': {
-            \        '+': '/usr/bin/xsel -b',
-            \        '*': '/usr/bin/xsel -p',
-            \    },
-            \    'cache_enabled': 0,
-            \}
-
 lua require('Comment').setup()
