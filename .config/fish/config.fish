@@ -16,4 +16,4 @@ alias ls='exa --grid --long --no-permissions --git --group-directories-first --i
 
 setxkbmap -layout us,ir -option grp:win_space_toggle
 
-/home/kourosh/.suckless/dwm-bar/dwm_bar.sh < /dev/null > /dev/null &
+export SUDO_EDITOR=nvim
