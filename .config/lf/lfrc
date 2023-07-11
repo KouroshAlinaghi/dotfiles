@@ -1,5 +1,8 @@
+# have border
+set drawbox
+
 # interpreter for shell commands
-set shell fish
+set shell bash 
 
 # use enter for shell commands
 map <enter> shell
@@ -25,4 +28,12 @@ set previewer ~/.config/lf/pv.sh
 map i $~/.config/lf/pv.sh $f | less -R
 
 # change default opening methods
-cmd open $nvim $fx
+cmd open ${{
+    case $f in
+        *.pdf) firefox $fx;;
+        *.zip) unzip -l $fx;;
+        *.jpg|*.png|*.jpeg|*.JPG|*.JPEG|*.PNG|*.webp|*.ico|*.tga|*.gif|*.GIF|*.bmp|*.BMP) feh $f;;
+        *.mp4|*.wmv) vlc $f;;
+        *) nvim $fx;;
+    esac
+}}

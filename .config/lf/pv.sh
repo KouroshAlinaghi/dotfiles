@@ -5,6 +5,6 @@ case "$1" in
     *.zip) unzip -l "$1";;
     *.rar) unrar l "$1";;
     *.7z) 7z l "$1";;
-    *.pdf) pdftotext "$1" -;;
+    *.pdf) less "$1";;
     *) bat --paging=never --style=numbers --terminal-width $(($2-5)) -f "$1";;
 esac
