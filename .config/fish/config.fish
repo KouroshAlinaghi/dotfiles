@@ -1,7 +1,13 @@
+set fish_greeting ""
+
 status --is-interactive; 
 starship init fish | source
-set fish_greeting ""
+
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH=$PATH:/usr/local/go/bin
+
+export BAT_THEME="Catppuccin-frappe"
+export SUDO_EDITOR=nvim
 
 fzf_configure_bindings --directory=\cf --variables=\cv --history=\ch
 export FZF_DEFAULT_OPTS=" \
@@ -10,10 +16,6 @@ export FZF_DEFAULT_OPTS=" \
 --color=marker:#f2d5cf,fg+:#c6d0f5,prompt:#ca9ee6,hl+:#e78284 \
 --height 70% --border" 
 
-export BAT_THEME="Catppuccin-frappe"
-
 alias ls='exa --grid --long --no-permissions --git --group-directories-first --icons --group --no-user'
 
 setxkbmap -layout us,ir -option grp:win_space_toggle
-
-export SUDO_EDITOR=nvim
