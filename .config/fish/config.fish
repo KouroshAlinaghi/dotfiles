@@ -4,7 +4,6 @@ status --is-interactive;
 starship init fish | source
 
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH=$PATH:/usr/local/go/bin
 
 export BAT_THEME="Catppuccin-frappe"
 export SUDO_EDITOR=nvim
