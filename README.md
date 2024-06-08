@@ -1,5 +1,5 @@
 # My personal config files
 
 ## Screenshots
-![nvim](./screenshots/atronvim.png "astronvim")
+![nvim](./screenshots/astronvim.png "astronvim")
 ![terminal](./screenshots/warp-terminal.png "warp terminal")
