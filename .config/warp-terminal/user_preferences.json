@@ -1,0 +1,21 @@
+{
+  "prefs": {
+    "Theme": "{\"Custom\":{\"name\":\"Catppuccin Macchiato\",\"path\":\"/home/kourosh/.local/share/warp-terminal/themes/catppuccin_macchiato.yml\"}}",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "AutosuggestionAcceptedCount": "2",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "InputMode": "\"Waterfall\"",
+    "AIAssistantRequestLimitInfo": "{\"limit\":40,\"num_requests_used_since_refresh\":0,\"next_refresh_time\":\"2024-07-08T07:16:45.816772Z\"}",
+    "WorkflowsBoxOpen": "true",
+    "FontName": "\"JetBrainsMono Nerd Font Mono\"",
+    "WelcomeTipsFeaturesUsed": "[{\"Hint\":\"BlockSelect\"},{\"Action\":\"OpenWarpDrive\"},{\"Action\":\"ThemePicker\"},{\"Action\":\"CommandPalette\"},{\"Action\":\"CommandSearch\"},{\"Action\":\"WarpAI\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"SplitPane\"},{\"Hint\":\"CreateBlock\"},{\"Action\":\"AiCommandSearch\"}]",
+    "HasDismissedWarpDriveWelcome": "true",
+    "FontSize": "20.0",
+    "WelcomeTipsCompleted": "true",
+    "HonorPS1": "true",
+    "LineHeightRatio": "1.2",
+    "ChangelogVersions": "{\"v0.2024.05.07.08.02.stable_02\":true}",
+    "ExperimentId": "88202433-cdb8-43ef-8e78-9d0435499696",
+    "NotebookFontSize": "14.0"
+  }
+}

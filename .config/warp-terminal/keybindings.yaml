@@ -1,0 +1,6 @@
+---
+"pane_group:navigate_next": ctrl-tab
+"pane_group:navigate_prev": ctrl-shift-tab
+"workspace:close_active_tab": ctrl-w
+"editor_view:cut_word_left": none
+"pane_group:close_current_session": none
