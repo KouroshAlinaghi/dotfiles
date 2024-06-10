@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# Prints out the number of pacman updates (Arch Linux)
+# Requires an internet connection
+# Depends on yay and checkupdates (pacman-contrib)
+# Optional: add --devel flag to the yay cmd to check for *-git package updates.
+
+PREFIX='󰌌'
+
+get_updates()
+{
+    echo "$PREFIX $(xkblayout-state print "%s")"
+}
+
+get_updates

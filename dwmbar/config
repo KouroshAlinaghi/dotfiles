@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # What modules, in what order
-MODULES="date backlight battery ram volume wifi time"
+MODULES="date backlight battery keyboard-layout ram volume wifi time"
 
 # Delay between showing the status bar
 DELAY="0.05"
