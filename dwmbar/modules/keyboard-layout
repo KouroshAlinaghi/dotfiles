@@ -9,7 +9,14 @@ PREFIX='󰌌'
 
 get_updates()
 {
-    echo "$PREFIX $(xkblayout-state print "%s")"
+    caps_lock_status=$(xset -q | sed -n 's/^.*Caps Lock:\s*\(\S*\).*$/\1/p')
+    if [ $caps_lock_status == "on" ]; then
+        LAYOUT=$(xkblayout-state print "%s" | tr a-z A-z)
+    else
+        LAYOUT=$(xkblayout-state print "%s")
+    fi
+
+    echo "$PREFIX $LAYOUT"
 }
 
 get_updates
