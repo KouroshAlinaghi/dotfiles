@@ -1,0 +1,28 @@
+{
+  "prefs": {
+    "AIRequestLimitInfo": "{\"limit\":40,\"num_requests_used_since_refresh\":1,\"next_refresh_time\":\"2024-08-26T12:36:04.442966Z\"}",
+    "RestoreSession": "false",
+    "Notifications": "{\"mode\":\"Enabled\",\"is_long_running_enabled\":true,\"long_running_threshold\":{\"secs\":30,\"nanos\":0},\"is_password_prompt_enabled\":true}",
+    "Theme": "\"FancyDracula\"",
+    "NewTabPlacement": "\"AfterAllTabs\"",
+    "HasAutoOpenedWelcomeFolder": "true",
+    "WelcomeTipsCompleted": "true",
+    "InputMode": "\"Waterfall\"",
+    "FontSize": "20.0",
+    "TelemetryEnabled": "true",
+    "AgentModeOnboardingBlockShown": "true",
+    "ExperimentId": "f72a3057-c377-428d-b113-a72a65b492aa",
+    "SystemTheme": "false",
+    "NotebookFontSize": "14.0",
+    "HonorPS1": "true",
+    "CrashReportingEnabled": "true",
+    "ChangelogVersions": "{\"v0.2024.07.30.08.02.stable_01\":true}",
+    "ReceivedReferralTheme": "\"Inactive\"",
+    "AutosuggestionAcceptedCount": "2",
+    "SameLinePromptBlockState": "\"DoNotShow\"",
+    "WelcomeTipsFeaturesUsed": "[{\"Action\":\"SplitPane\"},{\"Action\":\"SaveNewLaunchConfig\"},{\"Action\":\"ThemePicker\"},{\"Hint\":\"CreateBlock\"},{\"Hint\":\"BlockAction\"},{\"Action\":\"CommandSearch\"},{\"Action\":\"HistorySearch\"},{\"Action\":\"CommandPalette\"},{\"Hint\":\"BlockSelect\"},{\"Action\":\"AiCommandSearch\"}]",
+    "AIAssistantRequestLimitInfo": "{\"limit\":40,\"num_requests_used_since_refresh\":1,\"next_refresh_time\":\"2024-08-26T12:36:04.442966Z\"}",
+    "InputAutodetectionBannerDismissed": "true",
+    "LineHeightRatio": "1.3"
+  }
+}

@@ -1,0 +1,6 @@
+[time]
+disabled = false
+format = '[\[$time\]]($style) '
+
+[golang]
+format = 'via [ʕ◔ϖ◔ʔ $version](bold cyan) '
